@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= headTitle %></title>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+<%- include('partials/navigation', { menuLinks, activeLinkPath }) %>
+<main>
+    <h1 class="heading">Newest Product</h1>
+    <% if (Object.keys(newestProduct).length > 0) { %>
+        <p>Name: <%= newestProduct.name %></p>
+        <p>Description: <%= newestProduct.description %></p>
+    <% } else { %>
+        <div>No data available</div>
+    <% } %>
+</main>
+</body>
+</html>

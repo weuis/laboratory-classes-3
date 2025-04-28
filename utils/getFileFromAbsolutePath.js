@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("utils/path");
 
 const getFileFromAbsolutePath = (catalog, fileWithFormat) => {
   const rootFileDir = path.dirname(require.main.filename);
